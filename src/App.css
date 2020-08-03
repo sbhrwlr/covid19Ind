@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.App {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
