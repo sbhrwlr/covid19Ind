@@ -16,7 +16,7 @@ class NavComponent extends Component {
         return (
             <Navbar  dark={true} style={{background: "black"}}>
             <div className="container ">
-            <NavbarBrand style={{color: "white"}}>Covid19Tracker</NavbarBrand>
+            <NavbarBrand style={{color: "white"}}>Covid19Tracker.ind</NavbarBrand>
               <Lottie
                       options={defaultOptions}
                       height={100}
