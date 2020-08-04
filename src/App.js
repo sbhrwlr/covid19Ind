@@ -1,22 +1,21 @@
 import React, { Component } from 'react';
 import NationData from './Components/IndiaDataCompnent';
-import { Navbar, NavbarBrand} from 'reactstrap'
+import StatesView from './Components/IndiaStatesComponent'
 import './App.css';
-
+import NavComponent from './Components/NavComponent'
 
 class App extends Component {
+
+
 
 render(){
   var d = new Date();
   return (
     <div className="App">
-        <Navbar  dark={true} style={{background: "black"}}>
-          <div className="container">
-          <NavbarBrand style={{color: "white"}}>Covid19Tracker</NavbarBrand>
-          </div>
-        </Navbar>
-        <p style={{textAlign: "center"}}>{d.toLocaleString()}</p>
+        <NavComponent/>
+        <p style={{textAlign: "center", margin:20}}>{d.toLocaleString()}</p>
         <NationData />
+        <StatesView/>
     </div>
   );
 }
