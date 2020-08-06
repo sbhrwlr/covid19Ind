@@ -25,7 +25,7 @@ class NavComponent extends Component {
             </div>
             <Nav>
             <NavItem>
-              <a href="https://drive.google.com/uc?export=download&id=1F3O789Dc24I3dGA3V0-Zz0rG6fcf4kP-" download="Track">Android App</a>
+              <a href="https://srv-file14.gofile.io/download/klerlZ/app-debug.apk" download="Track">Android App</a>
             </NavItem>            </Nav>
           </Navbar>
         )
