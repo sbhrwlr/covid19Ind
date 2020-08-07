@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7be6fddab6702869925ba9b8a6b3b1bc",
+    "revision": "efd9d62d6cf68d3faf8a69d7e0a1fe69",
     "url": "/covid19Ind/index.html"
   },
   {
-    "revision": "2034c2db5b48a53fcd71",
+    "revision": "c1e6c3179591a3ed7bb2",
     "url": "/covid19Ind/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "86f948de6697b5554cbd",
+    "revision": "ec8f82894329f1f69775",
     "url": "/covid19Ind/static/css/main.3d5c82d9.chunk.css"
   },
   {
-    "revision": "2034c2db5b48a53fcd71",
-    "url": "/covid19Ind/static/js/2.035e0f78.chunk.js"
+    "revision": "c1e6c3179591a3ed7bb2",
+    "url": "/covid19Ind/static/js/2.1fc8ea8e.chunk.js"
   },
   {
-    "revision": "6485e28f1bc40c1e743bb4de5f286310",
-    "url": "/covid19Ind/static/js/2.035e0f78.chunk.js.LICENSE.txt"
+    "revision": "cf2d91f24eec11fbf0a5ec1e81925b0e",
+    "url": "/covid19Ind/static/js/2.1fc8ea8e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "86f948de6697b5554cbd",
-    "url": "/covid19Ind/static/js/main.231915e2.chunk.js"
+    "revision": "ec8f82894329f1f69775",
+    "url": "/covid19Ind/static/js/main.f6e289df.chunk.js"
   },
   {
     "revision": "70cd11213e8237426f5d",
     "url": "/covid19Ind/static/js/runtime-main.997c3936.js"
+  },
+  {
+    "revision": "4f8427a0644bb0ff2e98bf7b7276c36f",
+    "url": "/covid19Ind/static/media/android.4f8427a0.svg"
   },
   {
     "revision": "88d89c8db5502674f735df136b97e7bf",
