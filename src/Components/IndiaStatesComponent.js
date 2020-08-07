@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
-import axios from 'axios'
+import {
+    LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
+  } from 'recharts';
+  
+
+  
 class StatesView extends Component {
 
     constructor(props){
@@ -23,18 +28,18 @@ class StatesView extends Component {
                 <div>
                 <div className="container">
                 <div className="row">
-                <div className="col shadow-md p-2 rounded" style={{background: "#e0e0e0", margin: 5, padding: 10, fontSize: 12}}>State/UT</div>
-                <div className="col shadow-md p-2 rounded" style={{background: "#e0e0e0", margin: 5, padding: 10, fontSize: 12}}>Confirmed</div>
-                <div className="col shadow-md p-2 rounded" style={{background: "#e0e0e0", margin: 5, padding: 10, fontSize: 12}}>Active</div>
-                <div className="col shadow-md p-2 rounded" style={{background: "#e0e0e0", margin: 5, padding: 10 , fontSize: 12}}>Recovered</div>
-                <div className="col shadow-md p-2 rounded" style={{background: "#e0e0e0", margin: 5, padding: 10, fontSize: 12}}>Deceased</div>
+                <div className="col shadow-md p-2 rounded" style={{background: "#e0e0e0", margin: 5, padding: 10, fontSize: 12, fontWeight: 'bold'}}>State/UT</div>
+                <div className="col shadow-md p-2 rounded" style={{background: "#e0e0e0", margin: 5, padding: 10, fontSize: 12, fontWeight: 'bold'}}>Confirmed</div>
+                <div className="col shadow-md p-2 rounded" style={{background: "#e0e0e0", margin: 5, padding: 10, fontSize: 12, fontWeight: 'bold'}}>Active</div>
+                <div className="col shadow-md p-2 rounded" style={{background: "#e0e0e0", margin: 5, padding: 10 , fontSize: 12, fontWeight: 'bold'}}>Recovered</div>
+                <div className="col shadow-md p-2 rounded" style={{background: "#e0e0e0", margin: 5, padding: 10, fontSize: 12, fontWeight: 'bold'}}>Deceased</div>
                 </div>
                     </div>
                 {this.state.StateData.map((sdata) => (
                         <div>
                         <div className="container">
                             <div className="row">
-                            <div className="col shadow-md p-2 rounded" style={{background: "#e0e0e0", margin: 5, padding: 10 , fontSize: 12}}>{sdata.state}</div>
+                            <div className="col shadow-md p-2 rounded" style={{background: "#e0e0e0", margin: 5, padding: 10 , fontSize: 12, wordWrap: "break-word", fontWeight: 'bold'}}>{sdata.state}</div>
                             <div className="col shadow-md p-2 rounded" style={{background: "#f7f7f7", margin: 5, padding: 10, fontSize: 12}}>{sdata.confirmed}</div>
                             <div className="col shadow-md p-2 rounded" style={{background: "#f7f7f7", margin: 5, padding: 10, fontSize: 12}}>{sdata.active}</div>
                             <div className="col" style={{background: "#f7f7f7", margin: 5,  padding: 10, fontSize: 12}}>{sdata.recovered}</div>

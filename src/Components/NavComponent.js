@@ -5,6 +5,8 @@ import animdata from './logo.json'
 import logo from './virus.png'
 import { Button } from "reactstrap";
 import app from './app-debug.apk'
+import andicon from './android.svg'
+
 class NavComponent extends Component {
 
     render(){
@@ -20,17 +22,15 @@ class NavComponent extends Component {
                         <Navbar  dark={true} style={{background: "black"}}>
             <div className="container-fluid ">
             <NavbarBrand style={{color: "white"}}><img src={logo} style={{height: 30 , margin: "auto auto"}}/>Covid19 Tracker</NavbarBrand>
-              <Lottie
-
+              <Lottie style={{position: "absolute",left: "auto",right: 0}}
                       options={defaultOptions}
                       height={100}
-                      width={100}
-                     style={{textAlign: "right"}}></Lottie>
+                      width={100}></Lottie>
             </div>
           
           </Navbar>
           
-          <Button color="primary" style={{marginTop: 5}}><a href={app} download style={{color: "white"}}>Android App</a></Button>
+          <Button color="primary" style={{marginTop: 5}}><a href={app} download style={{color: "white"}}><img src={andicon} style={{height: 30 , margin: "auto auto"}}/>Android App</a></Button>
             </div>
         )
     }
