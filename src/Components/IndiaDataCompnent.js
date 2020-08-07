@@ -42,7 +42,7 @@ class NationData extends Component {
                         <p>+{this.state.IndData.delta.confirmed}</p>
                         <h2>{this.state.IndData.total.confirmed}</h2>
                         <div>
-                        <LineChart width={150} height={100} data={this.state.GraphData} style={{margin: "auto auto"}}>
+                        <LineChart width={100} height={75}  data={this.state.GraphData} style={{margin: "auto auto"}}>
                         <Line type="monotone" dataKey="dailyconfirmed" stroke="Red" strokeWidth={3} dot={false}/>
                         </LineChart>
                         </div>
@@ -56,7 +56,7 @@ class NationData extends Component {
                         <p>+{this.state.IndData.delta.recovered}</p>
                         <h2>{this.state.IndData.total.recovered}</h2>
                         <div style={{marginTop: 10}}>
-                        <LineChart width={150} height={100} data={this.state.GraphData} style={{margin: "auto auto", padding: "auto"}}>
+                        <LineChart width={100} height={75} data={this.state.GraphData} style={{margin: "auto auto", padding: "auto"}}>
                         <Line type="monotone" dataKey="dailyrecovered" stroke="Green" strokeWidth={3} dot={false}/>
                         </LineChart>
                         </div>
@@ -66,7 +66,7 @@ class NationData extends Component {
                         <p>+{this.state.IndData.delta.deceased}</p>
                         <h2>{this.state.IndData.total.deceased}</h2>
                         <div>
-                        <LineChart width={150} height={100} data={this.state.GraphData} style={{margin: "auto auto", padding: "auto"}}>
+                        <LineChart width={100} height={75}  data={this.state.GraphData} style={{margin: "auto auto", padding: "auto"}}>
                         <Line type="monotone" dataKey="dailydeceased" stroke="Grey" strokeWidth={3} dot={false}/>
                         </LineChart>
                         </div>
