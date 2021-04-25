@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import NationData from './Components/IndiaDataCompnent';
+import NationData from './Components/IndiaDataComponent';
 import StatesView from './Components/IndiaStatesComponent'
 import './App.css';
 import NavComponent from './Components/NavComponent'
