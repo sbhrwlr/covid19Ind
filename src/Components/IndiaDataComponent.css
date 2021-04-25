@@ -1,13 +1,33 @@
 .minichart{
     height: 125px;
-    width: 80%;
+    width: 60%;
     left: auto;
     right: auto;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
 }
 .container{
     width: 100%;
+}
+
+.confirmedchart{
+    background-color: rgba(252, 3, 3,0.3);
+    border-radius: 5px;
+}
+.recoveredchart{
+    background-color: rgba(0, 128, 0,0.3);
+    border-radius: 5px;
+}
+.activechart{
+    background-color: rgba(65, 105, 225,0.3);
+    border-radius: 5px;
+}
+.deceasedchart{
+    background-color: rgba(
+        77, 92, 92
+        ,0.3);
+    border-radius: 5px;
 }
 
 .totcases{
@@ -17,6 +37,7 @@
 }
 
 .confirmed{
+
     color: red;
 }
 .active{

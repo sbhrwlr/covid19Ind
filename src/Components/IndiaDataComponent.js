@@ -68,7 +68,7 @@ class NationData extends PureComponent {
                         <h6 style={{fontSize: 14}}>Confirmed</h6>
                         <p>+{this.state.IndData.delta.confirmed}</p>
                         <h2>{this.state.IndData.total.confirmed}</h2>
-                        <div  className="minichart">
+                        <div  className="confirmedchart minichart">
                         <ResponsiveContainer width="100%" height="100%">
                             <LineChart width={150} height={100} data={this.state.confirmedData}>
                             <Line type="monotone" dataKey="confirm" stroke="red" strokeWidth={2}  dot={false}/>
@@ -79,7 +79,7 @@ class NationData extends PureComponent {
                     <div className="active col-3">
                         <h6 style={{fontSize: 14}}>Active</h6>
                         <h2 style={{marginTop: 50}}>{this.state.IndData.total.confirmed - this.state.IndData.total.recovered - this.state.IndData.total.deceased - this.state.IndData.total.other}</h2>
-                        <div className="minichart" >
+                        <div className="activechart minichart" >
                         <ResponsiveContainer width="100%" height="100%">
 
                         <LineChart width={150} height={100} data={this.state.activeData}>
@@ -95,7 +95,7 @@ class NationData extends PureComponent {
                         <h6 style={{fontSize: 14}}>Recovered</h6>
                         <p>+{this.state.IndData.delta.recovered}</p>
                         <h2>{this.state.IndData.total.recovered}</h2>
-                        <div  className="minichart" >
+                        <div  className="recoveredchart minichart" >
                         <ResponsiveContainer width="100%" height="100%">
 
                         <LineChart width={150} height={100} data={this.state.recoveredData}>
@@ -109,7 +109,7 @@ class NationData extends PureComponent {
                         <h6 style={{fontSize: 14}}>Deceased</h6>
                         <p>+{this.state.IndData.delta.deceased}</p>
                         <h2>{this.state.IndData.total.deceased}</h2>
-                        <div  className="minichart">
+                        <div  className="deceasedchart minichart">
                         <ResponsiveContainer width="100%" height="100%">
                         <LineChart width={150} height={100}  data={this.state.deceasedData}>
                         <Line type="monotone" dataKey="decease" stroke="Grey" strokeWidth={2} dot={false}/>
