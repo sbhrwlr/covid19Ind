@@ -55,7 +55,7 @@ class NationData extends PureComponent {
 
     render(){
         return (
-            <div className="totcases container-fluid">
+            <div className="totcases">
                 <div>
 
                 {this.state.loading || (!this.state.IndData.total && !this.state.GraphData)? (
@@ -63,8 +63,8 @@ class NationData extends PureComponent {
                 ) :
 
             <div>
-                <div className='row justify-content-center' style={{background: ""}}>
-                    <div className="col-2 " style={{textAlign: "center", color: "red", marginLeft: 15, marginRight:15, marginTop: 15}}>
+                <div className='row justify-content-center' >
+                    <div className="confirmed col-3 ">
                         <h6 style={{fontSize: 14}}>Confirmed</h6>
                         <p>+{this.state.IndData.delta.confirmed}</p>
                         <h2>{this.state.IndData.total.confirmed}</h2>
@@ -76,7 +76,7 @@ class NationData extends PureComponent {
                         </ResponsiveContainer>
                         </div>
                     </div>
-                    <div className="col-2" style={{textAlign: "center", color: "blue", marginLeft: 15, marginRight:15, marginTop: 15}}>
+                    <div className="active col-3">
                         <h6 style={{fontSize: 14}}>Active</h6>
                         <h2 style={{marginTop: 50}}>{this.state.IndData.total.confirmed - this.state.IndData.total.recovered - this.state.IndData.total.deceased - this.state.IndData.total.other}</h2>
                         <div className="minichart" >
@@ -91,7 +91,7 @@ class NationData extends PureComponent {
                         
                     </div>
 
-                    <div className="col-2" style={{textAlign: "center", color: "green", marginLeft: 15, marginRight:15, marginTop: 15}}>
+                    <div className="recovered col-3">
                         <h6 style={{fontSize: 14}}>Recovered</h6>
                         <p>+{this.state.IndData.delta.recovered}</p>
                         <h2>{this.state.IndData.total.recovered}</h2>
@@ -105,7 +105,7 @@ class NationData extends PureComponent {
 
                         </div>
                     </div>
-                    <div className="col-2" style={{textAlign: "center", color: "grey", marginLeft: 15, marginRight:15, marginTop: 15}}>
+                    <div className="deceased col-3">
                         <h6 style={{fontSize: 14}}>Deceased</h6>
                         <p>+{this.state.IndData.delta.deceased}</p>
                         <h2>{this.state.IndData.total.deceased}</h2>
